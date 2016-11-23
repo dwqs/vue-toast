@@ -1,0 +1,37 @@
+  {
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "destructuring": true,
+      "classes": true,
+      "defaultParams": true,
+      "blockBindings": true,
+      "modules": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "restParams": true,
+      "spread": true,
+      "templateStrings": true
+    },
+    "parser": "babel-eslint",
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [2, 4],
+      "quotes": [2, "single"],
+      "linebreak-style": [2, "unix"],
+      "semi": [2, "always"],
+      "no-trailing-spaces": 2,
+      "space-before-function-paren": [2, "always"],
+      "eqeqeq": [2, "allow-null"],
+      "no-console": 0,
+      "no-cond-assign": 0,
+      "no-extra-boolean-cast": 0,
+      "no-unused-vars": 0
+    }
+  }
