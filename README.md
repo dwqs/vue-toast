@@ -12,7 +12,7 @@ Or in **package.json**:
 
 ```
 "dependencies": {
-  "@dwqs/vue-toast": "^0.5.2"
+  "@dwqs/vue-toast": "version"
 }
 ```
 
