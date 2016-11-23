@@ -4,7 +4,7 @@
   "author":"pomy",
   "description": "A toast component for vue.js",
   "license": "MIT",
-  "keywords": ["resume","vue"],
+  "keywords": ["toast","vue","vue toast"],
   "main": "src/index.js",
   "repository": {
     "type": "git",
@@ -14,9 +14,8 @@
     "url": "https://github.com/dwqs/vue-toast/issues"
   },
   "scripts": {
-    "dev":"cross-env NODE_ENV=development node --harmony ./server/index",
-    "prod":"cross-env NODE_ENV=production node --harmony ./server/index",
-    "prod:build": "webpack --progress --hide-modules --config ./build/webpack.prod.config.js && cd ./client && gulp build"
+    "dev": "webpack --config ./webpack.config.js -w --progress --display-error-details",
+    "build": "webpack --config ./webpack.config.js --progress --display-error-details"
   },
   "devDependencies": {
     "vue": "^2.0.0",
