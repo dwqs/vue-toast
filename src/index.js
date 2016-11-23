@@ -49,10 +49,10 @@ const show = (props) => {
 
     Vue.nextTick(function() {
         instance.shown = true;
-        // instance.timer = setTimeout(function() {
-        //     instance.close();
-        //     instance = null;
-        // }, instance.duration);
+        instance.timer = setTimeout(function() {
+            instance.close();
+            instance = null;
+        }, instance.duration);
     });
     //return instance;
 };
