@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>vue toast example</title>
+    <style type="text/css">
+        .btn{
+            width: 135px;
+            height: 36px;
+            outline: none;
+            border:0 none;
+            background-color: #0087ee;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<button id="button">open a toast</button>
+<button id="info" class="btn">default toast</button>
+<button id="success" class="btn">success toast</button>
+<button id="warn" class="btn">warn toast</button>
+<button id="error" class="btn">error toast</button>
+<button id="loading" class="btn">loading toast</button>
+<button id="long" class="btn">长文本</button>
+<button id="custom-time" class="btn">自定义时间</button>
 <script src="../node_modules/vue/dist/vue.js"></script>
 <script src="./dist/bundle.js"></script>
 </body>

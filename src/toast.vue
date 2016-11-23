@@ -27,14 +27,19 @@
         top: 24px;
         left: 50%;
         transform: translate(-50%, 0);
-        width: 5em;
-        height: 3em;
+        width: auto;
+        max-width: 270px;
+        height: 44px;
+        padding: 12px;
         font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
         font-size: 16px;
         color: #fff;
         text-align: center;
         border-radius: 4px;
         background: rgba(0, 0, 0, 0.7);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         &:before{
             content: '';
             display: inline-block;

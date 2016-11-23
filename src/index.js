@@ -9,8 +9,11 @@ import Toast from './toast.vue';
 
 const ToastConstructor = Vue.extend(Toast);
 
-ToastConstructor.prototype.close = function() {
+let instance = null;
+
+ToastConstructor.prototype.remove = function() {
     this.shown = false;
+    instance = null;
     removeDom(this.$el);
 };
 
@@ -24,6 +27,11 @@ let processProps = (props) => {
 };
 
 let getAnInstance = () => {
+
+    if(instance){
+        return instance;
+    }
+
     return new ToastConstructor({
         el: document.createElement('div')
     });
@@ -35,28 +43,63 @@ let removeDom = el => {
     }
 };
 
-
 const show = (props) => {
-    props = processProps(props);
-    let instance = getAnInstance();
+    instance = getAnInstance();
 
     clearTimeout(instance.timer);
     instance.message = props.message || '';
-    instance.duration = props.duration || 1500;
+    instance.duration = (typeof props.duration === "number" && props.duration >= 0) ? props.duration : 1500;
     instance.type = props.type || 'info';
 
     document.body.appendChild(instance.$el);
 
     Vue.nextTick(function() {
         instance.shown = true;
-        instance.timer = setTimeout(function() {
-            instance.close();
-            instance = null;
-        }, instance.duration);
+        //if duration is 0, toast will always show
+        //you can invoke remove to hidden it
+        if(instance.duration) {
+            instance.timer = setTimeout(function() {
+                instance.remove();
+            }, instance.duration);
+        }
     });
-    //return instance;
+    return instance;
+};
+
+const info = function(props) {
+    props = processProps(props);
+    props = Object.assign({type: 'info'}, props);
+    show(props);
+};
+
+const error = function(props) {
+    props = processProps(props);
+    props = Object.assign({type: 'error'}, props);
+    show(props);
+};
+
+const warn = function(props) {
+    props = processProps(props);
+    props = Object.assign({type: 'warn'}, props);
+    show(props);
+};
+
+const success  = function(props) {
+    props = processProps(props);
+    props = Object.assign({type: 'success'}, props);
+    show(props);
+};
+
+const loading  = function(props) {
+    props = processProps(props);
+    props = Object.assign({type: 'loading'}, props);
+    show(props);
 };
 
 export default {
-    show
+    info,
+    error,
+    warn,
+    success,
+    loading
 }
