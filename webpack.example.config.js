@@ -7,11 +7,11 @@ var path = require('path');
 var extensions = ['','.js','.jsx','.vue'];
 
 module.exports = {
-    entry: path.resolve(__dirname, './src/index.js'),
+    entry: path.resolve(__dirname, './example/index.js'),
 
     output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, './lib')
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, './example/dist')
     },
 
     module: {

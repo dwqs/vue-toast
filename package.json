@@ -5,7 +5,7 @@
   "description": "A toast component for vue.js",
   "license": "MIT",
   "keywords": ["toast","vue","vue toast"],
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/dwqs/vue-toast"
@@ -14,7 +14,7 @@
     "url": "https://github.com/dwqs/vue-toast/issues"
   },
   "scripts": {
-    "dev": "webpack --config ./webpack.config.js -w --progress --display-error-details",
+    "dev": "webpack --config ./webpack.example.config.js -w --progress --display-error-details",
     "build": "webpack --config ./webpack.config.js --progress --display-error-details"
   },
   "devDependencies": {
