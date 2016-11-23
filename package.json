@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "webpack --config ./webpack.example.config.js -w --progress --display-error-details",
-    "build": "webpack --config ./webpack.config.js --progress --display-error-details"
+    "build": "webpack --config ./webpack.config.js -w --progress --display-error-details"
   },
   "devDependencies": {
     "vue": "^2.0.0",
