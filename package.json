@@ -18,7 +18,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dwqs/vue-toast"
+    "url": "https://github.com/dwqs/vue-toast.git"
   },
   "bugs": {
     "url": "https://github.com/dwqs/vue-toast/issues"
