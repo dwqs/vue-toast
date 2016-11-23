@@ -1,5 +1,5 @@
 {
-  "name": "vue-toast",
+  "name": "@dwqs/vue-toast",
   "version": "0.5.2",
   "author": "pomysky@gamil.com",
   "description": "A toast component for vue.js",
