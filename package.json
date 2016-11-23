@@ -1,6 +1,6 @@
 {
   "name": "vue-toast",
-  "version": "1.0.0",
+  "version": "0.5.2",
   "author":"pomy",
   "description": "A toast component for vue.js",
   "license": "MIT",
