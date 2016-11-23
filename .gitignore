@@ -3,6 +3,7 @@
 node_modules/
 public/
 dist/
+lib/
 npm-debug.log
 *.log
 .DS_Store

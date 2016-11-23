@@ -5,9 +5,9 @@
 'use strict';
 
 import Vue from 'vue';
-import NXToast from './toast.vue';
+import Toast from './toast.vue';
 
-const ToastConstructor = Vue.extend(NXToast);
+const ToastConstructor = Vue.extend(Toast);
 
 ToastConstructor.prototype.close = function() {
     this.shown = false;

@@ -1,12 +1,19 @@
 <template>
-    <div v-show="shown">
+    <div v-show="shown" class="toast-mask">
         <div class="test">{{message}}</div>
     </div>
 </template>
 
 <style scoped lang="less">
-    .test{
-        color: red;
+    .toast-mask{
+        position: fixed;
+        z-index: 1024;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+        box-sizing: border-box;
     }
 </style>
 
