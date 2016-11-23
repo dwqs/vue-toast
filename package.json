@@ -1,7 +1,7 @@
 {
   "name": "vue-toast",
   "version": "0.5.2",
-  "author":"pomy",
+  "author":"pomysky@gamil.com",
   "description": "A toast component for vue.js",
   "license": "MIT",
   "keywords": ["toast","vue","vue toast"],
@@ -34,9 +34,5 @@
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.2"
   },
-  "maintainers": [{
-      "name": "pomy",
-      "email": "pomysky@gmail.com"
-    }],
   "homepage": "https://github.com/dwqs/vue-toast#readme"
 }
