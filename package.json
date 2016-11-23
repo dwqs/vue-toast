@@ -1,10 +1,20 @@
 {
   "name": "vue-toast",
   "version": "0.5.2",
-  "author":"pomysky@gamil.com",
+  "author": "pomysky@gamil.com",
   "description": "A toast component for vue.js",
   "license": "MIT",
-  "keywords": ["toast","vue","vue toast"],
+  "keywords": [
+    "toast",
+    "vue",
+    "vue toast"
+  ],
+  "contributors": [
+    {
+      "name": "dwqs",
+      "email": "pomysky@gmail.com"
+    }
+  ],
   "main": "lib/index.js",
   "repository": {
     "type": "git",
