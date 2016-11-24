@@ -1,6 +1,9 @@
 ## Overview
 A toast component for Vue, designed based on Ant Design
 
+## Show Cases
+![toast case](https://segmentfault.com/img/bVF0XK)
+
 ## Installation
 First, install `vue-toast` from npm:
 
