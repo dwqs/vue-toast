@@ -1,5 +1,7 @@
 ## Overview
-A toast component written with Vue, designed based on Ant Design
+A toast component written with Vue, designed based on Ant Design. 
+
+> vue-toast 1.x deprecated
 
 ## Show Cases
 ![toast gif](http://p1.bpimg.com/567571/4d92a829dcb0d0de.gif)
