@@ -9,3 +9,10 @@ src/
 example/
 webpack.config.js
 webpack.example.config.js
+.gitignore
+.eslintrc
+.eslintignore
+.babelrc
+.editorconfig
+.eslintrc
+.npmignore

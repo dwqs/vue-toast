@@ -1,6 +1,6 @@
 {
   "name": "@dwqs/vue-toast",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "pomysky@gamil.com",
   "description": "A toast component for vue.js",
   "license": "MIT",

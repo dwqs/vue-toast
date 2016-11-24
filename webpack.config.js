@@ -11,7 +11,9 @@ module.exports = {
 
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, './lib')
+        path: path.resolve(__dirname, './lib'),
+        library: 'Toast',
+        libraryTarget: 'umd'
     },
 
     module: {
