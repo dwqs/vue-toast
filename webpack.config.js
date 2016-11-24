@@ -3,6 +3,7 @@
  */
 
 var path = require('path');
+var webpack = require('webpack');
 
 var extensions = ['','.js','.jsx','.vue'];
 
@@ -40,5 +41,17 @@ module.exports = {
 
     resolve: {
         extensions: extensions
-    }
+    },
+
+    plugins:[
+        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false
+            }
+        })
+    ]
 };
