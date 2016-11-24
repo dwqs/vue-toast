@@ -69,31 +69,31 @@ const show = (props) => {
 const info = function(props) {
     props = processProps(props);
     props = Object.assign({type: 'info'}, props);
-    show(props);
+    return show(props);
 };
 
 const error = function(props) {
     props = processProps(props);
     props = Object.assign({type: 'error'}, props);
-    show(props);
+    return show(props);
 };
 
 const warn = function(props) {
     props = processProps(props);
     props = Object.assign({type: 'warn'}, props);
-    show(props);
+    return show(props);
 };
 
 const success  = function(props) {
     props = processProps(props);
     props = Object.assign({type: 'success'}, props);
-    show(props);
+    return show(props);
 };
 
 const loading  = function(props) {
     props = processProps(props);
     props = Object.assign({type: 'loading'}, props);
-    show(props);
+    return show(props);
 };
 
 export default {

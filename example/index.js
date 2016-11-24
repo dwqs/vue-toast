@@ -15,7 +15,7 @@ let error = document.getElementById('error');
 let loading = document.getElementById('loading');
 
 info.addEventListener('click', () => {
-    Toast.info('default type is info');
+    Toast.info('普通信息提示');
 });
 
 time.addEventListener('click', () => {
@@ -30,7 +30,7 @@ longText.addEventListener('click', () => {
 });
 
 warn.addEventListener('click', () => {
-    Toast.warn('这是一段警告');
+    Toast.warn('这是警告');
 });
 
 success.addEventListener('click', () => {
@@ -42,5 +42,13 @@ error.addEventListener('click', () => {
 });
 
 loading.addEventListener('click', () => {
-    Toast.loading('正在加载....');
+    let toast = Toast.loading({
+        message:'正在加载....',
+        duration: 0
+    });
+
+    setTimeout(()=>{
+        console.log('async completed');
+        toast.remove();
+    },5000)
 });
