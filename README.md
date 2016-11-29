@@ -5,10 +5,10 @@ A toast component written with Vue, designed based on Ant Design. 
 
 ## Show Cases
 
-**On pc:**
+#### On pc:
 ![toast-pc](http://i1.piimg.com/567571/754217f003cb1e89.gif)
 
-**On mobile:**
+#### On mobile:
 ![toast-mobile](http://i1.piimg.com/567571/5d3124e9da091d8f.gif)
 
 ## Installation
