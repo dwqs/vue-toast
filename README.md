@@ -4,7 +4,12 @@ A toast component written with Vue, designed based on Ant Design. 
 > vue-toast 1.x deprecated
 
 ## Show Cases
-![toast gif](http://p1.bpimg.com/567571/4d92a829dcb0d0de.gif)
+
+**On pc:**
+![toast-pc](http://i1.piimg.com/567571/754217f003cb1e89.gif)
+
+**On mobile:**
+![toast-mobile](http://i1.piimg.com/567571/5d3124e9da091d8f.gif)
 
 ## Installation
 First, install `vue-toast` from npm:
