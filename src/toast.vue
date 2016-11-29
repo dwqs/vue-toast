@@ -1,8 +1,8 @@
 <template>
     <div v-show="shown" class="toast-mask">
-        <div class="toast">
+        <div class="toast" :style="{color:textColor}">
             <i :class="['toast-icon',type+'-icon',{'toast-spin': type==='loading'}]"></i>
-            <span :class="['message','message-'+type]" v-text="message"></span>
+            <span class="message" v-text="message"></span>
         </div>
     </div>
 </template>
@@ -170,21 +170,6 @@
     .message{
         position: relative;
         top: 3px;
-        &.message-info,&.message-loading{
-            color: #369BE9;
-        }
-
-        &.message-success{
-            color: #16C294
-        }
-
-        &.message-error{
-            color: #E95471;
-        }
-
-        &.message-warn{
-            color: #FA9E33;
-        }
     }
 
     @keyframes spin {
@@ -217,6 +202,22 @@
             duration:{
                 type:Number,
                 default:1500
+            }
+        },
+        computed:{
+            textColor(){
+                switch(this.type){
+                    case "info":
+                    case "loading":
+                        return "#369BE9";
+                    case "success":
+                        return "#16C294";
+                    case "error":
+                        return "#E95471";
+                    case "warn":
+                        return "#FA9E33";
+
+                }
             }
         }
     }
