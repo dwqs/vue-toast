@@ -1,6 +1,6 @@
 <template>
     <div v-show="shown" class="toast-mask">
-        <div class="toast" :style="{color:textColor}">
+        <div class="toast" :style="{color:textColor}" :class="{middle:isMobile}">
             <i :class="['toast-icon',type+'-icon',{'toast-spin': type==='loading'}]"></i>
             <span class="message" v-text="message"></span>
         </div>
@@ -25,7 +25,7 @@
 
     .toast{
         position: absolute;
-        top: 24px;
+        top: 54px;
         left: 50%;
         transform: translate(-50%, 0);
         width: auto;
@@ -48,6 +48,10 @@
             height: 100%;
             font-size: 0;
             vertical-align: middle;
+        }
+        &.middle{
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 
@@ -218,6 +222,9 @@
                         return "#FA9E33";
 
                 }
+            },
+            isMobile(){
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             }
         }
     }
