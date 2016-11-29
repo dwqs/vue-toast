@@ -1,9 +1,11 @@
 <template>
     <div v-show="shown" class="toast-mask">
-        <div class="toast" :style="{color:textColor}" :class="{middle:isMobile}">
-            <i :class="['toast-icon',type+'-icon',{'toast-spin': type==='loading'}]"></i>
-            <span class="message" v-text="message"></span>
-        </div>
+        <transition name="toast">
+            <div v-show="shown" class="toast" :style="{color:textColor}" :class="{middle:isMobile}">
+                <i :class="['toast-icon',type+'-icon',{'toast-spin': type==='loading'}]"></i>
+                <span class="message" v-text="message"></span>
+            </div>
+        </transition>
     </div>
 </template>
 
@@ -17,10 +19,6 @@
         left: 0;
         font-size: 16px;
         background-color: transparent;
-        box-sizing: border-box;
-        *{
-            box-sizing: border-box;
-        }
     }
 
     .toast{
@@ -41,6 +39,10 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        box-sizing: border-box;
+        *{
+            box-sizing: border-box;
+        }
         &:before{
             content: '';
             display: inline-block;
@@ -53,6 +55,24 @@
             top: 50%;
             transform: translate(-50%, -50%);
         }
+    }
+
+    .toast-enter{
+        opacity: 0;
+        top: -54px;
+    }
+
+    .toast-enter-active {
+        transition: all .5s ease;
+    }
+
+    .toast-leave{
+        opacity: 1;
+    }
+
+    .toast-leave-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+        opacity: 0;
     }
 
     .toast-icon{
