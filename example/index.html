@@ -2,16 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <title>vue toast example</title>
     <style type="text/css">
+        body{
+            font-size: 10px;
+        }
+        @media screen and (min-width:320px) and (max-width:375px){body{font-size:11px}}
+        @media screen and (min-width:376px) and (max-width:414px){body{font-size:12px}}
+        @media screen and (min-width:415px) and (max-width:639px){body{font-size:14px}}
+        @media screen and (min-width:640px) and (max-width:719px){body{font-size:16px}}
+        @media screen and (min-width:720px) and (max-width:749px){body{font-size:18px}}
+        @media screen and (min-width:750px) and (max-width:799px){body{font-size:20px}}
+
         .btn{
-            width: 135px;
-            height: 36px;
+            width: 13.5em;
+            height: 3.6em;
+            margin-top: 1em;
             outline: none;
             border:0 none;
             background-color: #0087ee;
             color: white;
-            font-size: 16px;
+            font-size: 1em;
             border-radius: 4px;
             cursor: pointer;
         }
