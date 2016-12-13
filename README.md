@@ -29,9 +29,6 @@ Or in **package.json**:
 Then use it:
 
 ```
-// ES6 mudule
-import Toast from '@dwqs/vue-toast';
-
 //CommonJS
 var Toast = require('@dwqs/vue-toast');
 ```
@@ -85,6 +82,3 @@ This is useful showing loading state for user in async action.
 
 ## License
 MIT
-
-
-
