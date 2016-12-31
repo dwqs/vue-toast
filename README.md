@@ -15,14 +15,14 @@ A toast component written with Vue, designed based on Ant Design. 
 First, install `vue-toast` from npm:
 
 ```
-npm install @dwqs/vue-toast --save-dev
+npm install v-toast --save-dev
 ```
 
 Or in **package.json**:
 
 ```
 "dependencies": {
-  "@dwqs/vue-toast": "version"
+  "v-toast": "2.1.7"
 }
 ```
 
@@ -30,7 +30,7 @@ Then use it:
 
 ```
 //CommonJS
-var Toast = require('@dwqs/vue-toast');
+var Toast = require('v-toast');
 ```
 
 ## Usage
