@@ -15,7 +15,7 @@ A toast component written with Vue, designed based on Ant Design. 
 First, install `vue-toast` from npm:
 
 ```
-npm install v-toast --save-dev
+npm install v-toast --save
 ```
 
 Or in **package.json**:
