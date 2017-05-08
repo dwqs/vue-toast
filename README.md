@@ -60,7 +60,7 @@ Toast.info({
 
 ## Configuration
 |Opthion|Description|Default|
-|:--:|:--:|:--:|:--:|
+|:--:|:--:|:--:|
 |message|a string as the content of the toast|''|
 |duration|time before the toast vanishes, in millisecond|1500|
 
