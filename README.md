@@ -1,3 +1,5 @@
+![download](https://img.shields.io/npm/dt/@dwqs/vue-toast.svg) ![npm-version](https://img.shields.io/npm/v/@dwqs/vue-toast.svg) ![license](https://img.shields.io/npm/l/@dwqs/vue-toast.svg)
+
 ## Overview
 A toast component written with Vue, designed based on Ant Design. 
 
